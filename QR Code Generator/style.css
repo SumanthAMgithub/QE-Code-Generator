@@ -1,0 +1,80 @@
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;   /* horizontally center */
+  align-items: center;       /* vertically center */
+  flex-direction: column;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  margin-bottom: 20px;
+  color: #00c8ff;
+}
+
+/* Container box */
+.container {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Input and buttons */
+input {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #00c8ff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #00a6d6;
+}
+
+/* QR code box */
+#qrcode {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .container {
+    padding: 20px;
+  }
+
+  input {
+    width: 100%;
+  }
+}
